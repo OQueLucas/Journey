@@ -6,7 +6,6 @@ public class GetAllTripsUseCase
 {
     public ResponseTripsJson Execute()
     {
-
         var dbContext = new JourneyDbContext();
 
         var trips = dbContext.Trips.ToList();
